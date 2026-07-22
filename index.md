@@ -1,3 +1,4 @@
 # Test web site
 
-Congrats! You have a web site. Now you can start adding content to it!
+Hey look, I'm a pi figurine! Well, not quite, I'm like a fraction of a percent wrong, but close enough.
+
