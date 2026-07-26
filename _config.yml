@@ -1,0 +1,9 @@
+title: "FIXME Web Site Title"
+description: " "
+nav:
+  - About: /about
+  - Gallery: /gallery
+  - Friends: 
+    - DeviCat: https://devicat.art/
+    - Mustard Mine: https://mustardmine.com/
+    - GitHub: https://github.com/
