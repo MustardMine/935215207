@@ -36,7 +36,7 @@
           {%- assign url = name | downcase | replace: " ", "" %}
           <div class="nav-menucontainer">
             <a class="nav-dropdown {{active}}" href="{{ url }}" id="dropdown-{{ url }}" role="button" aria-haspopup="true" aria-expanded="false">{{ name }}{{current}}</a>
-            <div class="nav-submenu" aria-labelledby="dropdown-{{ url }}">
+            <div class="nav-submenu" aria-role="menu" aria-labelledby="dropdown-{{ url }}">
               {%- for subdest in info[1] -%}{%- for subinfo in subdest -%}
 	        {%- if subinfo[1] -%}
 		  {%- assign subname = subinfo[0] -%}
