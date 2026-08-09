@@ -7,5 +7,5 @@ Descriptive text up here is optional. Replace the images here with your own art!
 ![Cat](img/devicatButt.png)
 ![Mustard Mine logo](img/mustard-mine-logo-large.png)
 ![Mustard Mine logo](img/mustard-mine-logo-large.png)
-</div>
+![Screenshot 2024-09-26 10-25-40](img/Screenshot_2024-09-26_10-25-40.png)</div>
 <div id="art-pagination-controls" class="pagination-controls"></div>
