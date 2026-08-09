@@ -13,3 +13,5 @@ and make *simple style* and **emphasis** changes using Markdown syntax.
 <div>Inline HTML can be used if needed</div>
 
 ![Mustard Mine logo](img/mustard-mine-logo.png)
+
+Test.
