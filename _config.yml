@@ -15,3 +15,5 @@ nav:
 # by changing this configuration.
 autogallery:
   gallery: img
+# An easy way to upload to this directory will be added above the Media section.
+upload_to: img
