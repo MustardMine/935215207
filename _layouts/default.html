@@ -7,19 +7,19 @@
     <meta property="og:title" content="{{ site.title }}">
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:url" content="{{ site.url }}">
-    <meta property="og:image" content="/img/mustard-mine-logo.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&display=swap">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="icon" href="/img/mustard-mine-logo.png">
+    <meta property="og:image" content="{{ site.github.url }}/img/mustard-mine-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.github.url }}/design/main.css">
+    <link rel="icon" href="{{ site.github.url }}/img/mustard-mine-logo.png">
   </head>
-  <!-- Pages Hostname {{ site.github.pages_hostname }} Pages URL {{ site.github.url }} Base URL {{ site.github.baseurl }} -->
-  <body class="{{ page.category | default: "devi" }}-cat">
+  
+  <body class="{{ page.category | default: '' }}">
     <!-- Navigation. -->
     <!-- Hamburger menu styling and technique inspired by https://codepen.io/erikterwan/pen/EVzeRP by Erik Terwan and made available under the terms of the MIT license -->
     <nav>
       <input type=checkbox>
       <div id=raptor_button><div></div><div></div><div></div></div>
-      <a class=keep href="/">HOME</a>
+      <a class=keep href="{{ site.github.url }}">HOME</a>
       <div style="flex-grow: 1"></div>
       {%- for dest in site.nav %}{%- for info in dest -%}
         {%- if info[1] -%}
@@ -36,7 +36,7 @@
           {%- assign url = name | downcase | replace: " ", "" %}
           <div class="nav-menucontainer">
             <a class="nav-dropdown {{active}}" href="{{ url }}" id="dropdown-{{ url }}" role="button" aria-haspopup="true" aria-expanded="false">{{ name }}{{current}}</a>
-            <div class="nav-submenu" aria-role="menu" aria-labelledby="dropdown-{{ url }}">
+            <div class="nav-submenu" aria-labelledby="dropdown-{{ url }}">
               {%- for subdest in info[1] -%}{%- for subinfo in subdest -%}
 	        {%- if subinfo[1] -%}
 		  {%- assign subname = subinfo[0] -%}
@@ -61,12 +61,12 @@
   </main>
 
 <div id=fader></div>
-<div id="popup"><figure><figcaption></figcaption><img src="/img/mustard-mine-logo.png" alt="[placeholder Mustard Mine]"></figure></div>
+<div id="popup"><figure><figcaption></figcaption><img src="{{ site.github.url }}/img/mustard-mine-logo.png" alt="[placeholder Mustard Mine]"></figure></div>
 
 <footer>
   <p>
-    <!-- Add other social media links here as needed -->
-    <a href="https://www.twitch.tv/YOURUSERNAME" title="Twitch: YourUserName"><img src="/img/twitchlogo.png" alt="Twitch: YourUserName"></a>
+    <!-- FIXME: Add other social media links here as needed -->
+    <a href="https://www.twitch.tv/$$login$$" title="Twitch: $$displayname$$"><img src="img/twitchlogo.png" alt="Twitch: $$displayname$$"></a>
   </p>
   <div class="toggle-container">
     <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2">
@@ -90,6 +90,6 @@
   </div>
   <p>&copy; <!-- put your name here --> 2026</p>
 </footer>
-<script src="/js/main.js" type=module></script>
+<script src="{{ site.github.url }}/design/main.js" type=module></script>
 </body>
 </html>
